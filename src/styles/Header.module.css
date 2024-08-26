@@ -1,0 +1,27 @@
+/* styles/Navbar.module.css */
+
+.navbar {
+    background-color: green; /* cinza escuro */
+    padding: 16px; 
+}
+
+.navList {
+    display: flex; /* ativa o Flexbox */
+    justify-content: flex-start; /* centraliza os itens */
+    list-style-type: none; /* remove os marcadores da lista */
+    padding: 0; /* remove o padding padrão */
+    margin: 0; /* remove a margem padrão */
+}
+
+.navItem {
+    margin: 0 16px; /* adiciona margem horizontal entre os itens */
+}
+
+.navLink {
+    color: white; /* cor do texto */
+    text-decoration: none; /* remove sublinhado */
+}
+
+.navLink:hover {
+    color: #e2e8f0; /* muda a cor ao passar o mouse */
+}
