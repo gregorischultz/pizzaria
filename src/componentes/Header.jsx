@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
 import { Link } from "react-router-dom";
-import styles from '../styles/Header.module.css';
+import styles from '../styles/Header.module.css'; //para mexer no css da bara de navegacao voce vai na pasta styles e vai nesse arquivo que esta ai (navbar.module.css)
 
 function Header() {
     return (
