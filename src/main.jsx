@@ -1,3 +1,5 @@
+//NAO MEXER NESSE ARQUIVO 
+
 import React from 'react';
 import ReactDom from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
