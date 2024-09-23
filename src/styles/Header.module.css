@@ -1,8 +1,9 @@
 /* styles/Navbar.module.css */
 
 .navbar {
-    background-color: green; /* cinza escuro */
+    background-color: green; 
     padding: 16px; 
+    width: auto;
 }
 
 .navList {
