@@ -3,12 +3,12 @@
 .navbar {
     background-color: green; 
     padding: 16px; 
-    width: auto;
+    width: 100vw; /* 100% da largura da viewport */
 }
 
 .navList {
     display: flex; /* ativa o Flexbox */
-    justify-content: flex-start; /* centraliza os itens */
+    justify-content: center; /* centraliza os itens */
     list-style-type: none; /* remove os marcadores da lista */
     padding: 0; /* remove o padding padrão */
     margin: 0; /* remove a margem padrão */

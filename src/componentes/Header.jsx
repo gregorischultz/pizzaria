@@ -14,7 +14,12 @@ function Header() {
           </li>
           <li className={styles.navItem}>
             <Link to="/Carte" className={styles.navLink}>
-              Carte
+            Services
+            </Link>
+          </li>
+          <li className={styles.navItem}>
+            <Link to="/Apropos" className={styles.navLink}>
+            A propos
             </Link>
           </li>
           <li className={styles.navItem}>
