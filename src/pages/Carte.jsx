@@ -1,14 +1,14 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
 
-function Home() {
+function Carte() {
   return (
     <>
     <div>
-      <h1>eu sou o home</h1>
+      <h1>eu sou o Carte</h1>
     </div>
     </>
   );
 }
 
-export default Home;
+export default Carte;

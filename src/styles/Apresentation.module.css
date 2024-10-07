@@ -1,0 +1,51 @@
+.heroSection {
+    display: flex;
+    flex-direction: column; /* Organiza o texto e a imagem em uma coluna */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    justify-content: center; /* Centraliza os itens verticalmente */
+    background-color: #E8DFD0; /* Cor de fundo suave */
+    padding: 40px 20px;
+    overflow: hidden; /* Garante que nada saia da seção */
+}
+
+.heroText {
+    text-align: center; /* Centraliza o texto horizontalmente */
+    margin-bottom: 20px; /* Espaçamento entre o texto e a imagem */
+}
+
+.heroText h1 {
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: 900;
+    font-size: 48px;
+    color: #425A3A;
+}
+
+.heroImageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heroImage {
+    max-width: 100%;
+    height: auto;
+    max-height: calc(100vh - 200px); /* Limita a altura da imagem para caber na tela */
+    object-fit: contain; /* Faz a imagem ser completamente visível */
+    border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+    .heroSection {
+        height: auto; /* Ajusta a altura para dispositivos móveis */
+    }
+
+    .heroText h1 {
+        font-size: 36px; /* Ajusta o tamanho do texto para dispositivos móveis */
+    }
+
+    .heroImage {
+        max-width: 90%; /* Ajusta o tamanho da imagem para dispositivos móveis */
+    }
+}
+
+

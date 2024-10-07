@@ -7,21 +7,23 @@ import logo from '../assets/Logo.png';
 function Header() {
     return (
       <nav className={styles.navbar}>
-        <img src={logo} className={styles.logo}/> 
+        <div className={styles.logoContainer}>
+          <img src={logo} className={styles.logo} alt="Logo Pizzaria"/> 
+        </div>
         <ul className={styles.navList}>
           <li className={styles.navItem}>
             <Link to="/" className={styles.navLink}>
-              Home
+              Cartes
             </Link>
           </li>
           <li className={styles.navItem}>
             <Link to="/Carte" className={styles.navLink}>
-            Services
+              Services
             </Link>
           </li>
           <li className={styles.navItem}>
             <Link to="/Apropos" className={styles.navLink}>
-            A propos
+              A propos
             </Link>
           </li>
           <li className={styles.navItem}>
@@ -30,9 +32,11 @@ function Header() {
             </Link>
           </li>
         </ul>
-        <button className={styles.buttonReserver}>
-          <p>Reserver une table</p>
-        </button>
+        <div className={styles.buttonContainer}>
+          <button className={styles.buttonReserver}>
+            Reserver une table
+          </button>
+        </div>
       </nav>
     );
 }
