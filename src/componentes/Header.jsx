@@ -2,10 +2,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styles from '../styles/Header.module.css';
+import logo from '../assets/Logo.png';
 
 function Header() {
     return (
       <nav className={styles.navbar}>
+        <img src={logo} className={styles.logo}/> 
         <ul className={styles.navList}>
           <li className={styles.navItem}>
             <Link to="/" className={styles.navLink}>
@@ -28,6 +30,9 @@ function Header() {
             </Link>
           </li>
         </ul>
+        <button className={styles.buttonReserver}>
+          <p>Reserver une table</p>
+        </button>
       </nav>
     );
 }

@@ -1,17 +1,28 @@
-/* styles/Navbar.module.css */
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap');
 
 .navbar {
-    background-color: green; 
+    background-color: #E8DFD0; 
     padding: 16px; 
     width: 100vw; /* 100% da largura da viewport */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .navList {
-    display: flex; /* ativa o Flexbox */
-    justify-content: center; /* centraliza os itens */
     list-style-type: none; /* remove os marcadores da lista */
-    padding: 0; /* remove o padding padrão */
+    display: flex; /* ativa o Flexbox */
+    /*justify-content: center; /* centraliza os itens */
+    /*padding: 0; /* remove o padding padrão */
     margin: 0; /* remove a margem padrão */
+}
+
+.logo{
+    position: absolute;
+    left: 40px;
+    float: none; /* remove o float left */
+    padding-left: 30px;
+    padding-top: 0px*/
 }
 
 .navItem {
@@ -19,10 +30,32 @@
 }
 
 .navLink {
-    color: white; /* cor do texto */
+    color: black; /* cor do texto */
     text-decoration: none; /* remove sublinhado */
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
 }
 
 .navLink:hover {
     color: #e2e8f0; /* muda a cor ao passar o mouse */
 }
+
+.buttonReserver{
+    color: white;
+    height: 40px;
+    font-family:"Alegreya Sans", sans-serif ;
+    font-weight: 700;
+    font-size: 16px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background: #1B1D16;
+    border-radius: 12px;
+    border: 1px #1B1D16 solid;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
