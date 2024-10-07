@@ -1,20 +1,31 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
 import { Link } from "react-router-dom";
-import styles from '../styles/Header.module.css'; //para mexer no css da bara de navegacao voce vai na pasta styles e vai nesse arquivo que esta ai (navbar.module.css)
+import styles from '../styles/Header.module.css';
+import logo from '../assets/Logo.png';
+
+
 
 function Header() {
     return (
       <nav className={styles.navbar}>
+        <div className={styles.logoContainer}>
+          <img src={logo} className={styles.logo} alt="Logo Pizzaria"/> 
+        </div>
         <ul className={styles.navList}>
           <li className={styles.navItem}>
             <Link to="/" className={styles.navLink}>
-              Home
+              Cartes
             </Link>
           </li>
           <li className={styles.navItem}>
             <Link to="/Carte" className={styles.navLink}>
-              Carte
+              Services
+            </Link>
+          </li>
+          <li className={styles.navItem}>
+            <Link to="/Apropos" className={styles.navLink}>
+              A propos
             </Link>
           </li>
           <li className={styles.navItem}>
@@ -23,6 +34,11 @@ function Header() {
             </Link>
           </li>
         </ul>
+        <div className={styles.buttonContainer}>
+          <button className={styles.buttonReserver}>
+            Reserver une table
+          </button>
+        </div>
       </nav>
     );
 }
